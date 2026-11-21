@@ -1,0 +1,1 @@
+**bold** _italic_ **_both_** a**mid**word

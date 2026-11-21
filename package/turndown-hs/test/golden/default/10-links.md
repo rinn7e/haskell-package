@@ -1,0 +1,1 @@
+[plain](https://example.com), [spaced](<https://example.com/a b> "A title"), [parens](https://e.com/\(x\)), [mail](mailto:a@b.io), no href, [a & b](https://e.com/?a=1&b=2)

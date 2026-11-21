@@ -1,0 +1,7 @@
+resolver: lts-23.28
+
+packages:
+  - package/turndown-hs
+
+extra-deps:
+  - zenacy-html-2.1.2

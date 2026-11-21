@@ -1,0 +1,8 @@
+{
+  "headingStyle": "atx",
+  "codeBlockStyle": "fenced",
+  "bulletListMarker": "-",
+  "emDelimiter": "*",
+  "strongDelimiter": "__",
+  "hr": "---"
+}

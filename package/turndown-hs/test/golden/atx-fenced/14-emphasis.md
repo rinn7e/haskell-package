@@ -1,0 +1,1 @@
+__bold__ *italic* __*both*__ a__mid__word
