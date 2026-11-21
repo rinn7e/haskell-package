@@ -1,7 +1,8 @@
 resolver: lts-23.28
 
 packages:
-  - package/turndown-hs
+  - package/r7-asyncapi
+  - package/r7-turndown-hs
 
 extra-deps:
   - zenacy-html-2.1.2

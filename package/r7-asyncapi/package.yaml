@@ -1,0 +1,86 @@
+name: r7-asyncapi
+version: 0.1.0
+author: Moremi Vannak
+maintainer: Moremi Vannak
+github: rinn7e/haskell-package
+homepage: https://github.com/rinn7e/haskell-package/tree/master/package/r7-asyncapi#readme
+synopsis: AsyncAPI 3 documents with openapi3 schemas
+description: >
+  A data model of the part of AsyncAPI 3.0 that describes a message stream,
+  with payloads as openapi3 schemas, and the derivation of one message per
+  constructor of a sum type from its aeson encoding.
+
+category: Data
+license: MIT
+copyright: 2026 Moremi Vannak
+
+extra-source-files:
+  - README.md
+  - LICENSE
+
+default-extensions:
+  - BlockArguments
+  - DataKinds
+  - DefaultSignatures
+  - DeriveAnyClass
+  - DeriveGeneric
+  - DerivingStrategies
+  - FlexibleContexts
+  - FlexibleInstances
+  - ImportQualifiedPost
+  - LambdaCase
+  - OverloadedStrings
+  - PolyKinds
+  - ScopedTypeVariables
+  - StandaloneKindSignatures
+  - StrictData
+  - TemplateHaskell
+  - TypeApplications
+  - TypeOperators
+  - UndecidableInstances
+
+ghc-options:
+  - -Weverything
+  - -Wno-all-missed-specialisations
+  - -Wno-implicit-prelude
+  - -Wno-inferred-safe-imports
+  - -Wno-missed-specialisations
+  - -Wno-missing-import-lists
+  - -Wno-missing-kind-signatures
+  - -Wno-missing-local-signatures
+  - -Wno-missing-safe-haskell-mode
+  - -Wno-monomorphism-restriction
+  - -Wno-prepositive-qualified-module
+  - -Wno-missing-role-annotations
+  - -Wno-missing-poly-kind-signatures
+  - -Wno-safe
+  - -Wno-unsafe
+
+dependencies:
+  - base >= 4.18 && < 5
+
+library:
+  source-dirs: src
+  dependencies:
+    - aeson
+    - containers
+    - insert-ordered-containers
+    - lens
+    - openapi3
+    - text
+
+tests:
+  test:
+    main: Main.hs
+    source-dirs: test
+    ghc-options:
+      - -threaded
+    dependencies:
+      - aeson
+      - r7-asyncapi
+      - insert-ordered-containers
+      - lens
+      - openapi3
+      - tasty
+      - tasty-hunit
+      - text

@@ -6,7 +6,8 @@ A monorepo of the various packages I create for the Haskell ecosystem. Each pack
 
 | Package | Folder | Description |
 | --- | --- | --- |
-| `turndown` | [`package/turndown-hs`](package/turndown-hs) | HTML to Markdown, a port of the [turndown](https://github.com/mixmark-io/turndown) JavaScript library with exactly its output. |
+| `r7-asyncapi` | [`package/r7-asyncapi`](package/r7-asyncapi) | AsyncAPI 3.0 documents with [openapi3](https://hackage.haskell.org/package/openapi3) schemas, and messages derived from Haskell types. |
+| `r7-turndown-hs` | [`package/r7-turndown-hs`](package/r7-turndown-hs) | HTML to Markdown, a port of the [turndown](https://github.com/mixmark-io/turndown) JavaScript library with exactly its output. |
 
 ## Build and test
 
@@ -20,7 +21,7 @@ stack build
 stack test
 ```
 
-To build or test one package, name it, for example `stack test turndown`.
+To build or test one package, name it, for example `stack test r7-turndown-hs`.
 
 ## License
 

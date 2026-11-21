@@ -1,9 +1,9 @@
-name: turndown
+name: r7-turndown-hs
 version: 0.1.0.0
 author: Moremi Vannak
 maintainer: Moremi Vannak
 github: rinn7e/haskell-package
-homepage: https://github.com/rinn7e/haskell-package/tree/master/package/turndown-hs#readme
+homepage: https://github.com/rinn7e/haskell-package/tree/master/package/r7-turndown-hs#readme
 synopsis: HTML to Markdown, a port of the turndown JavaScript library
 description: |
   Converts HTML to Markdown with the output of turndown 7.2.4
@@ -66,4 +66,4 @@ tests:
       - filepath >= 1.4 && < 1.6
       - tasty >= 1.4 && < 1.6
       - tasty-hunit >= 0.10 && < 0.11
-      - turndown
+      - r7-turndown-hs

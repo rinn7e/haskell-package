@@ -1,10 +1,10 @@
-# turndown-hs
+# r7-turndown-hs
 
 Convert HTML to Markdown in Haskell, with exactly the output of
 [turndown](https://github.com/mixmark-io/turndown) 7.2.4, the JavaScript
 library.
 
-`turndown-hs` is a port of turndown, function by function. It parses HTML into
+`r7-turndown-hs` is a port of turndown, function by function. It parses HTML into
 the same DOM as a browser does, collapses white space the same way, runs the
 same rules in the same order, and escapes and joins blocks the same way. So a
 Haskell server makes the same Markdown, character for character, as turndown
@@ -21,7 +21,7 @@ does in a browser. A golden test suite checks this against turndown itself.
 
 ## Installation
 
-The package is named `turndown` and is not on Hackage yet. Add it as a
+The package is `r7-turndown-hs` and is not on Hackage yet. Add it as a
 dependency from this repository.
 
 With Stack, in `stack.yaml`:
@@ -31,7 +31,7 @@ extra-deps:
   - github: rinn7e/haskell-package
     commit: <commit>
     subdirs:
-      - package/turndown-hs
+      - package/r7-turndown-hs
   - zenacy-html-2.1.2
 ```
 
@@ -42,10 +42,10 @@ source-repository-package
   type: git
   location: https://github.com/rinn7e/haskell-package.git
   tag: <commit>
-  subdir: package/turndown-hs
+  subdir: package/r7-turndown-hs
 ```
 
-Then add `turndown` to the `build-depends` (or the `dependencies` of
+Then add `r7-turndown-hs` to the `build-depends` (or the `dependencies` of
 `package.yaml`) of your package.
 
 ## Usage
@@ -151,7 +151,7 @@ browser and bounds the work on deeply nested input.
 From the root of the repository:
 
 ```bash
-stack test turndown
+stack test r7-turndown-hs
 ```
 
 The golden tests live in `test/golden/`:
